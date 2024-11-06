@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: linear-gradient(135deg, #f06, #834);
+}
+
+.calculator{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    overflow: hidden;
+    width: 350px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+}
+
+.calculator:hover {
+    transform: rotateX(10deg) rotateY(10deg);
+}
+#display{
+    width: 100%;
+    height: 80px;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    text-align: right;
+    background-color: #333;
+    color:#fff
+   
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.btn {
+    background-color: linear-gradient(145deg,#e0e0e0,#d0d0d0);
+    border: none;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    transition: all 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.2), inset -4px -4px 6px rgb(255, 255, 255, 0.3);
+}
+
+.btn:hover {
+    background-color: linear-gradient(145deg, #ddd, #ccc);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3), inset -2px -2px 4px rgb(255, 255, 255, 0.5);
+    transform: translateY(2px);
+}
+
+.btn:active {
+   
+    background-color: linear-gradient(145deg, #bbb, #aaa);
+    box-shadow: inset 4px 4px 8px rgb(0, 0, 0, 0.2);
+    transform: translateY(2px);
+} 
+
+.btn:nth-child(1){
+    background-color: linear-gradient(145deg, #ff5e5e, #ff1c1c);
+    color: white;
+
+}
+.btn:nth-child(2){
+    background-color: linear-gradient(145deg, #ffa700, #ff8500);
+    color: white;
+
+}
+.btn:nth-child(3){
+    background-color: linear-gradient(145deg, #ffcc00, #ffbf00);
+    color: white;
+
+}
+.btn:nth-child(4),.btn:nth-child(8),.btn:nth-child(12),.btn:nth-child(16){
+    background-color : linear-gradient(145deg, #38a1db, #1976d2);
+    color : white;
+
+}
+
+.btn:nth-child(20){
+    background-color: linear-gradient(145deg, #5cb85c, #4cae4c);
+    color: white;
+    box-shadow: 6px 6px 12px rgb(0, 0, 0, 0.4), inset -2px -2px 4px rgb(255, 255, 255, 0.3);
+
+}
