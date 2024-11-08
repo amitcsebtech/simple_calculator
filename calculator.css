@@ -70,22 +70,22 @@ body{
 
 .btn:nth-child(1){
     background-color: linear-gradient(145deg, #ff5e5e, #ff1c1c);
-    color: white;
+    color: red;
 
 }
 .btn:nth-child(2){
     background-color: linear-gradient(145deg, #ffa700, #ff8500);
-    color: white;
+    color: red;
 
 }
 .btn:nth-child(3){
     background-color: linear-gradient(145deg, #ffcc00, #ffbf00);
-    color: white;
+    color: red;
 
 }
 .btn:nth-child(4),.btn:nth-child(8),.btn:nth-child(12),.btn:nth-child(16){
     background-color : linear-gradient(145deg, #38a1db, #1976d2);
-    color : white;
+    color : red;
 
 }
 
